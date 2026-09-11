@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Daily Scripture</title>
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #111;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .scripture-frame {
+      width: 55%;
+      height: 55%;
+      border: none;
+
+      /* Enlarge Bible Gateway's small widget */
+      transform: scale(1.75);
+      transform-origin: center center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <iframe
+    class="scripture-frame"
+    src="https://www.biblegateway.com/votd/get/?format=html&version=NIV"
+    scrolling="no">
+  </iframe>
+
+</body>
+</html>
